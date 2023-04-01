@@ -1,0 +1,37 @@
+@use 'variables' as var
+
+@media screen and ( min-width: 1280px )
+    .main
+        width: 1440px
+        margin: auto
+
+    .card
+        width: 840px
+        height: 651px
+        margin: 154px auto
+        padding: 60px 56px 0
+        .date
+            &__day, &__month, &__year
+                width: 160px
+                height: 70px
+            &__input
+                font-size: 2rem
+                padding-left: 20px
+            &__label
+                font-size: .875rem
+                letter-spacing: 0.26em
+            &__month
+                margin: 0 32px 0
+            &__message-error
+                font-size: .875rem
+            &__icon-arrow
+                position: absolute
+                bottom: calc( -96px / 2 )
+                left: 93%
+                width: 96px
+                height: 96px
+                background-size: 44px
+        .age
+            p, span
+                line-height: 108px
+                font-size: 6.25rem
